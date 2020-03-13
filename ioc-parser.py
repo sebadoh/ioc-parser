@@ -39,13 +39,15 @@
 # 05/18/15 - Palo Alto Networks AutoFocus output format added by Christopher Clark 
 #            cclark@paloaltonetworks.com - https://github.com/Xen0ph0n/
 #
+# 03/12/20 - Initial support for python3 added by Etay Nir enir@paloaltonetworks.com
+#
 ###################################################################################################
 import os
 import sys
 import fnmatch
 import argparse
 import re
-from StringIO import StringIO
+from io import StringIO
 try:
     import configparser as ConfigParser
 except ImportError:
